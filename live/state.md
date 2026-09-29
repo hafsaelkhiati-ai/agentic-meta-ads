@@ -6,14 +6,14 @@
 
 ## Last Session
 - **Date:** 2026-09-29
-- **Summary:** EA command centre setup complete. Onboarding finished.
+- **Summary:** Onboarding done. Owner name set (Hafsa). Built workflow #1: client strategy (blueprint, skill, templates, playbook).
 
 
 ## Open Tasks
-- Choose the first Build Queue workflow to turn into a skill
+- Send the first real client brief (templates/client-brief.md) + Ad Library captures to run the client strategy workflow
+- Next build: weekly client report
 - Set up Meta Marketing API access (access token + ad account IDs → .env)
 - Provide a gold-standard writing example (report or WhatsApp update) — owner said "later"
-- Confirm owner's personal name (currently recorded as "Agentic Meta Ads")
 
 
 ## Current Priorities

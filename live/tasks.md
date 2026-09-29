@@ -9,7 +9,9 @@
 
 
 - [x] Complete EA setup and onboarding | Source: initial setup | Due: 2026-09-29
-- [ ] Choose first Build Queue workflow to build | Source: onboarding | Due: none
+- [x] Choose first Build Queue workflow to build (client strategy) | Source: onboarding | Due: 2026-09-29
+- [ ] Send first real client brief + Ad Library captures | Source: client strategy build | Due: none
+- [ ] Build weekly client report workflow | Source: Build Queue #2 | Due: none
 - [ ] Set up Meta Marketing API access (token + ad account IDs in .env) | Source: onboarding S2 | Due: none
 - [ ] Add a gold-standard example to references/goldstandard/ | Source: onboarding S5 | Due: none
-- [ ] Confirm owner's personal name for intel/founder.md | Source: onboarding S1 | Due: none
+- [x] Confirm owner's personal name (Hafsa) for intel/founder.md | Source: onboarding S1 | Due: none
