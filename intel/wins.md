@@ -11,7 +11,7 @@
 
 
 ## Milestones to Hit
-- [ ] Meta Marketing API access set up (token + ad account IDs in .env)
+- [ ] Official Meta Ads MCP connected (mcp.facebook.com/ads)
 - [ ] Weekly client report workflow built
 - [ ] CPL-rise alert workflow built
 - [ ] Meta platform updates watch built

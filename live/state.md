@@ -12,7 +12,7 @@
 ## Open Tasks
 - Send the first real client brief (templates/client-brief.md) + Ad Library captures to run the client strategy workflow
 - Next build: weekly client report
-- Set up Meta Marketing API access (access token + ad account IDs → .env)
+- Connect the official Meta Ads MCP: authorise at developers.facebook.com/docs/ads-ai-connectors, add mcp.facebook.com/ads as a custom connector in Claude settings
 - Provide a gold-standard writing example (report or WhatsApp update) — owner said "later"
 
 

@@ -54,14 +54,14 @@ At session start, read focus.md and state.md. Reference others as needed — nev
 - **Meta Ads Manager / Business Manager**: run and manage campaigns. Live, manual access only.
 - **Google Sheets**: where leads land. Live.
 - **WhatsApp**: client comms. Live.
-- **Meta Marketing API**: programmatic reads for reports and alerts. Not set up yet; this blocks automation.
+- **Meta Ads MCP (official)**: own ad account data and management. Not connected yet; this blocks automated reports and alerts. Ad Library, Andromeda and the Ads Manager AI are not accessible (see intel/stack.md).
 - **MCP servers**: Notion (docs), Google Drive (files/Sheets), Google Calendar, Airtable (data), Canva and Adobe (creatives).
 
 ## Build Queue
 Workflows to turn into Equipment and Blueprints over time, ranked by frequency and time saved:
 1. **Client strategy**: BUILT (2026-09-29). Research + Ad Library benchmark → 3-month strategy. blueprints/client-strategy.md, skill: client-strategy.
 2. **Weekly client report** (**Build this next**): what went well, what to optimise, advice. The biggest recurring time sink.
-3. **CPL-rise alert**: flags cost spikes early. Needs Meta Marketing API + Equipment.
+3. **CPL-rise alert**: flags cost spikes early. Needs the Meta Ads MCP connected.
 4. **Meta platform updates watch**: weekly digest of Meta Ads changes that affect campaigns. Blueprint only.
 5. **Lead quality check**: review Google Sheets leads against campaign data.
 6. **Optimisation recommendations**: propose budget/creative/audience changes for approval. Never auto-applied.
