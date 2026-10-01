@@ -7,3 +7,4 @@
 - Leads go into Google Sheets. Check lead quality there, not just in Ads Manager.
 - Meta changes the platform often. If something behaves differently than expected (UI, API field, metric definition, campaign type), say so plainly instead of guessing, and check for a recent Meta update.
 - Recommendations follow the report format in voice.md and never execute budget or on/off changes — see permissions.md.
+- **Work only on the main ad account (name and ID in CLAUDE.local.md).** Never read, create or change anything on any other ad account, even when the connector allows it. Owner directive 2026-09-30.

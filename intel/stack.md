@@ -20,7 +20,8 @@ The mix depends on the situation. In every case the job is managing Meta Ads cam
 | Meta Business Manager | Accounts, pages, pixels, permissions | Live (manual access) |
 | Google Sheets | Lead destination and tracking | Live |
 | WhatsApp | Client and crew communication | Live |
-| Meta Ads MCP (official, mcp.facebook.com/ads) | Read/write access to own ad accounts: reporting, campaign management, catalogs, signal diagnostics | Not connected — preferred route (replaces raw API token setup) |
+| Meta Marketing API (own app "Agentic Ads Hafsa") | Read + prepare campaigns on the main ad account only | Live 2026-09-30. API v26.0. Token in .env, expires 2026-11-29 (renew via Access Token Debugger → Extend) |
+| Meta Ads MCP (official, mcp.facebook.com/ads) | Own ad accounts: reporting, campaign management, catalogs, signals. Also Ad Library search | Connected 2026-09-30. Write actions only with Hafsa's approval |
 
 
 ## MCP Servers Connected
@@ -31,7 +32,8 @@ The mix depends on the situation. In every case the job is managing Meta Ads cam
 - Canva — ad creative design
 - Adobe for creativity — image/video editing for creatives
 
-Official Meta Ads MCP exists (launched 2026-04-29) but is not connected yet. Setup: authorise the ad account at developers.facebook.com/docs/ads-ai-connectors, then add mcp.facebook.com/ads as a custom connector in Claude settings. It covers own ad accounts only — not the Ad Library.
+Meta Ads MCP connected 2026-09-30. See live/state.md for which ad accounts have it enabled.
+**Ad Library search works for Morocco** (verified 2026-09-30: country=MA, "implant dentaire", 24 active ads). Returns page name, start date, headline, and snapshot link. It does not return the video itself.
 
 
 
@@ -39,4 +41,4 @@ Official Meta Ads MCP exists (launched 2026-04-29) but is not connected yet. Set
 ## Not Accessible
 - **Andromeda** (Meta's ad delivery engine) — internal, no external access.
 - **Ads Manager AI assistant** — closed, no external access.
-- **Ad Library for Morocco** — no official connector; the API covers commercial ads only for EU/UK delivery. Third-party scrapers exist but may breach Meta's terms — owner decision, not used by default. Benchmark = Hafsa's manual captures (see blueprints/client-strategy.md).
+- **Video content of competitor ads**: I can't watch videos. For hooks, visuals and voice-over, Hafsa sends screenshots of key moments or a transcript.

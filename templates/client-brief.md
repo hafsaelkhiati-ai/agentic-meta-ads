@@ -38,5 +38,5 @@
 - **Available now (photos, videos, UGC, testimonials, logo):**
 - **Can the client produce new video?** yes / no
 
-## Ad Library Captures (Hafsa)
-*Meta's Ad Library can't be read automatically for Moroccan ads. Browse facebook.com/ads/library (country = target country, All ads), then drop screenshots or ad links for each competitor into `live/<client>/research/ad-library-raw/`. For each competitor note: number of active ads, the oldest still-running ad's start date.*
+## Ad Library (Hafsa)
+*I search the Ad Library myself via the Meta Ads connector. Only needed from you: competitor names or Facebook pages if you know them. During the benchmark I'll ask for screenshots of key moments of the top video ads, saved in `live/<client>/research/ad-library-raw/`.*

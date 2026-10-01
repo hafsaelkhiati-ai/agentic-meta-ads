@@ -8,19 +8,19 @@
 
 ## Required Inputs
 1. `live/<client>/brief.md` — a completed copy of templates/client-brief.md. All (R) fields filled, even if "unknown".
-2. Ad Library captures in `live/<client>/research/ad-library-raw/` — screenshots or ad links from Hafsa (see Benchmark Sources).
+2. Meta Ads connector available (for the Ad Library search). Hafsa's video screenshots are requested during Step 3 — not needed to start.
 
-If the brief is missing or any (R) field is blank: list the missing fields and stop. If captures are missing: continue with source 2 and say so in the report.
+If the brief is missing or any (R) field is blank: list the missing fields and stop.
 
 `<client>` is kebab-case, e.g. `clinique-dentaire-rabat`.
 
 
 ## Benchmark Sources (in order)
-Verified 2026-09-29: the Ad Library website returns 403 to automated requests, and the Ad Library API only returns commercial ads delivered in the EU/UK. Moroccan-targeted ads cannot be pulled automatically.
+Verified 2026-09-30: the Meta Ads connector's Ad Library search (`ads_library_search`) returns active commercial ads for Morocco. The Ad Library website still blocks automated reads, and the public Ad Library API only covers commercial ads delivered in the EU/UK.
 
-1. **Hafsa's manual captures** (primary). She browses facebook.com/ads/library with country = target country and "All ads", and saves screenshots or ad links per competitor. I read and analyse them.
-2. **Web research** on competitors: websites, landing pages, offers, pricing, Instagram/Facebook pages, reviews.
-3. **Ad Library API** — only if a competitor also advertises to EU/UK audiences (e.g. France-targeted campaigns) and an API token exists in .env. Ask before calling.
+1. **Connector Ad Library search** (primary). Search by keyword and by competitor page, country = target country, status = ACTIVE. Max 50 results per search. Use it for targeted research, not bulk extraction. It returns page name, start date, headline and snapshot link. It does not return the video or full visuals.
+2. **Hafsa's captures for video content.** For the top ads from step 1 (longest-running first), ask Hafsa for screenshots of key moments (first 3 seconds, offer, end) or the spoken script. Save them in `research/ad-library-raw/`.
+3. **Web research** on competitors: websites, landing pages, offers, pricing, Instagram/Facebook pages, reviews.
 
 Always state which sources were used.
 
@@ -97,7 +97,8 @@ live/<client>/
 
 ## Failure Handling
 - **Brief incomplete** — list missing (R) fields, stop.
-- **No Ad Library captures** — benchmark from web research only, say so clearly, recommend Hafsa adds captures and re-run Step 3–4.
+- **Connector not available or Ad Library search errors** — fall back to Hafsa's manual captures and web research. Say which was used.
+- **No video captures** — benchmark from the connector data (start dates, headlines, volume) and web research, mark hook/visual analysis as "not verified", and ask Hafsa for screenshots of the top ads.
 - **Web search finds little for the niche/country** — say so, lean on playbook principles and the brief, flag assumptions.
 - **Budget too small to exit learning** — say so plainly in the strategy and propose the fix (fewer ad sets, higher-volume optimisation event, or longer timeline).
 - **Conflict between brief and research** (e.g. client price far above market) — raise it as a risk, don't hide it.

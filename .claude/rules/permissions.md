@@ -18,5 +18,8 @@ BEFORE taking any of the following actions, you MUST ask for explicit approval a
 | Change any campaign, ad set, or ad budget | Never without explicit approval — propose the change and the reasoning first |
 | Pause or activate any campaign, ad set, or ad | Never without explicit approval — propose the change and the reasoning first |
 
+| Create, edit, duplicate or delete any campaign, ad set, ad, audience or catalog (incl. via the Meta Ads connector) | Never without explicit approval — propose the change and the reasoning first |
+| Any other write action in a Meta ad account | Never without explicit approval. Read-only calls (reports, insights, lists) are allowed |
+
 
 **Why the campaign rules exist:** the owner must understand my logic and adjust it against what the client expects and how much the client wants to spend. Present a recommendation with the data behind it, then wait.

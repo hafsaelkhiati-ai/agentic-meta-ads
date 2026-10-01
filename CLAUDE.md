@@ -11,8 +11,9 @@ Full model reference: references/three-engine-model.md
 Every session, before responding to the user:
 1. Read `live/state.md` — session context, open tasks, current priorities
 2. Read `intel/focus.md` — what matters right now
-3. If open tasks or overdue items exist, mention them: "Before we start — you have X open items. Want to address any first?"
-4. Then respond to the user's request
+3. If the Meta Ads connector is available, check `is_ads_mcp_enabled` for the main ad account (ID in CLAUDE.local.md) with `ads_get_ad_accounts`. If it turned true, tell Hafsa and update intel/stack.md.
+4. If open tasks or overdue items exist, mention them: "Before we start — you have X open items. Want to address any first?"
+5. Then respond to the user's request
 
 For any workflow request:
 1. READ — Check the relevant Blueprint (if one exists)
@@ -54,7 +55,7 @@ At session start, read focus.md and state.md. Reference others as needed — nev
 - **Meta Ads Manager / Business Manager**: run and manage campaigns. Live, manual access only.
 - **Google Sheets**: where leads land. Live.
 - **WhatsApp**: client comms. Live.
-- **Meta Ads MCP (official)**: own ad account data and management. Not connected yet; this blocks automated reports and alerts. Ad Library, Andromeda and the Ads Manager AI are not accessible (see intel/stack.md).
+- **Meta Ads MCP (official)**: connected 2026-09-30. Own ad account data and management, plus Ad Library search (works for Morocco). Write actions need approval. Andromeda and the Ads Manager AI are not accessible.
 - **MCP servers**: Notion (docs), Google Drive (files/Sheets), Google Calendar, Airtable (data), Canva and Adobe (creatives).
 
 ## Build Queue
